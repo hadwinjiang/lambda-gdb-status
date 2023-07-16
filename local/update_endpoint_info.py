@@ -5,12 +5,9 @@ import json
 import os
 
 # rds settings
-# user_name = os.environ['USER_NAME']
-# password = os.environ['PASSWORD']
-# db_name = os.environ['DB_NAME']
-user_name = 'admin'
-password = 'Admin123'
-db_name = 'sbtest'
+user_name = os.environ['USER_NAME']
+password = os.environ['PASSWORD']
+db_name = os.environ['DB_NAME']
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
