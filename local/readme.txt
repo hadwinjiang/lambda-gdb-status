@@ -42,3 +42,5 @@ aws stepfunctions start-execution --input "input": "{\"first_name\" : \"test\"}"
 
 # reference documents:
 https://docs.aws.amazon.com/lambda/latest/dg/services-rds-tutorial.html
+
+EventBridge - Schedules 0 */6 * * ? *

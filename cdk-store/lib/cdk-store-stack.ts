@@ -38,9 +38,10 @@ export class CdkStoreStack extends Stack {
         "DB_NAME": "sbtest",
       },
       runtime: lambda.Runtime.PYTHON_3_9,
-      handler: "query_gdb_status.lambda_handler",
+      handler: "update_endpoints_info.lambda_handler",
       timeout: Duration.seconds(180),
     });
+    updateEndpointsInforLambda.role?.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonEC2FullAccess'));
 
     // step function definition
 
