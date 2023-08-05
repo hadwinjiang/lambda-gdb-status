@@ -37,5 +37,8 @@ aws rds describe-db-cluster-endpoints --db-cluster-identifier agora-kicking-uswe
     ]
 }
 
+https://docs.aws.amazon.com/cli/latest/reference/stepfunctions/start-execution.html
+aws stepfunctions start-execution --input "input": "{\"first_name\" : \"test\"}"
+
 # reference documents:
 https://docs.aws.amazon.com/lambda/latest/dg/services-rds-tutorial.html
